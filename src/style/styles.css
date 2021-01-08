@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: #654ea3;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+ 
+}
+
+.header > h1{
+    font-size: 3.2rem;
+
+}
+
+.numbergen-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+
+label {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+form > input{
+    color:  #654ea3;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    background: #ffffff;
+    width: 30px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.numbergen-container > p{
+    font-size: 2rem;
+    width: 800px;
+    height: 200px;
+}
+
+#love > h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.fa-kiss-beam{
+    font-size: 12rem;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.name-inputs-con {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 130px;
+}

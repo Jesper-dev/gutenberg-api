@@ -1,0 +1,43 @@
+a,
+h1,
+i {
+  animation: flow 15s ease-in-out infinite;
+  background: linear-gradient(-60deg, #c55ecc, #b45abb, #e73c7e, #ee7752);
+  background-size: 300%;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+input {
+  background: none;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: white;
+  width: 200px;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid #ffffff;
+  height: 25px;
+  margin-left: 10px;
+}
+
+h2 {
+  font-size: 4.7rem;
+  font-weight: bold;
+}
+
+@keyframes flow {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}

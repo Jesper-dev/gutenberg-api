@@ -1,0 +1,10 @@
+#click-me {
+    background: tomato;
+    width: 150px;
+    border: 3px solid black;
+}
+
+.random-num-display {
+    margin-bottom: 25px;
+    font-size: 45px;
+}
