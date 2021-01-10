@@ -20,18 +20,18 @@ const App = () => {
     <>
       <Router>
         <Landingpage />
-        <Link to="/love"></Link>
-        <Link to="/generate-fun-fact"></Link>
-        <Link to="/have-a-laugh"></Link>
+        <Link to="#/gutenberg-api/love"></Link>
+        <Link to="#/gutenberg-api/generate-fun-fact"></Link>
+        <Link to="#/gutenberg-api/have-a-laugh"></Link>
 
         <Switch>
-          <Route path="/gutenberg-api/love">
+          <Route path="/love">
             <LoveApi />
           </Route>
-          <Route path="/gutenberg-api/generate-fun-fact">
+          <Route path="/generate-fun-fact">
             <RandomNumFact />
           </Route>
-          <Route path="gutenberg-api/have-a-laugh">
+          <Route path="/gutenberg-api/have-a-laugh">
             <JokeApi />
           </Route>
         </Switch>
