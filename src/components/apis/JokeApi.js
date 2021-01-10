@@ -44,8 +44,6 @@ const JokeApiFunc = () => {
       .catch((error) => {
         console.log(error);
       });
-
-    console.log(category);
   }, [category, sendRequest]);
 
   const onCategoryChange = (event) => {
@@ -59,7 +57,9 @@ const JokeApiFunc = () => {
         <div>{setup}</div>
         <div>{delivery}</div>
         <div>{single}</div>
-        <button disabled={sendRequest} onClick={() => setSendRequest(true)}>RANDOM JOKE</button>
+        <button disabled={sendRequest} onClick={() => setSendRequest(true)}>
+          RANDOM JOKE
+        </button>
         <form>
           <label htmlFor="category">Choose a category</label>
           <select onChange={onCategoryChange} id="category" name="category">

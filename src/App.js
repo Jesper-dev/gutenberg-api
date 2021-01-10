@@ -1,15 +1,7 @@
 import React from "react";
 
 import Landingpage from "./components/Landingpage";
-import ReactRouter from "react-router";
-import {
-  BrowserRouter as Router,
-  HashRouter,
-  Route,
-  Link,
-  Switch,
-  useParams,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 import "./style/styles.css";
 import LoveApi from "./components/apis/LoveApi";
