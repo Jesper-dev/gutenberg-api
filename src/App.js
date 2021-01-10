@@ -9,6 +9,7 @@ import {
   Route,
   Link,
   Switch,
+  useParams,
 } from "react-router-dom";
 
 import "./style/styles.css";
@@ -20,18 +21,18 @@ const App = () => {
     <>
       <Router basename="https://jesperkyh.github.io/gutenberg-api">
         <Landingpage />
-        <Link to="#/gutenberg-api/love"></Link>
-        <Link to="#/gutenberg-api/generate-fun-fact"></Link>
-        <Link to="#/gutenberg-api/have-a-laugh"></Link>
+        <Link to="love"></Link>
+        <Link to="generate-fun-fact"></Link>
+        <Link to="have-a-laugh"></Link>
 
         <Switch>
-          <Route path="/love">
+          <Route path="/gutenberg-api//love" exact>
             <LoveApi />
           </Route>
-          <Route path="/generate-fun-fact">
+          <Route path="/gutenberg-api//generate-fun-fact" exact>
             <RandomNumFact />
           </Route>
-          <Route path="/gutenberg-api/have-a-laugh">
+          <Route path="/gutenberg-api//have-a-laugh" exact>
             <JokeApi />
           </Route>
         </Switch>
