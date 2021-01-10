@@ -13,15 +13,15 @@ import JokeApi from "./components/apis/JokeApi";
 const App = () => {
   return (
     <>
-      <HashRouter basename="/">
-        <Landingpage />
+      <HashRouter basename={process.env.PUBLIC_URL}>
         <Link to="/love"></Link>
         <Link to="/generate-fun-fact"></Link>
         <Link to="/have-a-laugh"></Link>
 
-        <Route exact path="/love" component={LoveApi} />
-        <Route path="/generate-fun-fact" component={RandomNumFact} />
-        <Route path="/have-a-laugh" component={JokeApi} />
+        <Route exact path="/" component={Landingpage} />
+        <Route exact path="/love/" component={LoveApi} />
+        <Route path="/generate-fun-fact/" component={RandomNumFact} />
+        <Route path="/have-a-laugh/" component={JokeApi} />
       </HashRouter>
     </>
   );
