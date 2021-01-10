@@ -13,22 +13,20 @@ import JokeApi from "./components/apis/JokeApi";
 const App = () => {
   return (
     <>
-      <Router basename="jesperkyh.github.io/">
+      <Router basename={process.env.PUBLIC_URL}>
         <Landingpage />
-        <Link to="love"></Link>
-        <Link to="generate-fun-fact"></Link>
-        <Link to="have-a-laugh"></Link>
 
         <Switch>
-          <Route path="gutenberg-api/love" exact>
-            <LoveApi />
-          </Route>
-          <Route path="gutenberg-api/generate-fun-fact" exact>
+          <Route exact path="/love" component={LoveApi} />
+          <Route exact path="/generate-fun-fact" component={RandomNumFact} />
+          <Route exact path="/have-a-laugh" component={JokeApi} />
+
+          {/* <Route path="gutenberg-api/generate-fun-fact" exact>
             <RandomNumFact />
           </Route>
           <Route path="gutenberg-api/have-a-laugh" exact>
             <JokeApi />
-          </Route>
+          </Route> */}
         </Switch>
       </Router>
     </>
