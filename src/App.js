@@ -18,10 +18,11 @@ const App = () => {
         <Link to="/love"></Link>
         <Link to="/generate-fun-fact"></Link>
         <Link to="/have-a-laugh"></Link>
-
-        <Route path="/love" component={LoveApi} />
-        <Route path="/generate-fun-fact" component={RandomNumFact} />
-        <Route path="/have-a-laugh" component={JokeApi} />
+        <Switch>
+          <Route path="/love" component={LoveApi} />
+          <Route path="/generate-fun-fact" component={RandomNumFact} />
+          <Route path="/have-a-laugh" component={JokeApi} />
+        </Switch>
       </HashRouter>
     </>
   );
