@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import "../../style/Love.css";
 
@@ -6,7 +6,6 @@ function LoveApi() {
   const [fname, setFname] = useState("");
   const [sname, setSname] = useState("");
   const [result, setResult] = useState(false);
-
 
   const options = {
     method: "GET",
@@ -23,14 +22,6 @@ function LoveApi() {
       setResult(response.data);
     });
   };
-  /* useEffect(() => {
-axios.request(options).then(function (response) {
-  console.log(response.data);
-  setResult(response.data)
-}).catch(function (error) {
-  console.error(error);
-});
-}, []) */
 
   const onTextChangeSname = (e) => {
     setSname(e.target.value);

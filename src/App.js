@@ -1,7 +1,7 @@
 import React from "react";
 
 import Landingpage from "./components/Landingpage";
-import { HashRouter, Route, Link, Switch } from "react-router-dom";
+import { HashRouter, Route, Link } from "react-router-dom";
 
 import "./style/styles.css";
 import LoveApi from "./components/apis/LoveApi";
@@ -18,11 +18,10 @@ const App = () => {
         <Link to="/love"></Link>
         <Link to="/generate-fun-fact"></Link>
         <Link to="/have-a-laugh"></Link>
-        <Switch>
-          <Route path="/love" component={LoveApi} />
-          <Route path="/generate-fun-fact" component={RandomNumFact} />
-          <Route path="/have-a-laugh" component={JokeApi} />
-        </Switch>
+
+        <Route exact path="/love" component={LoveApi} />
+        <Route path="/generate-fun-fact" component={RandomNumFact} />
+        <Route path="/have-a-laugh" component={JokeApi} />
       </HashRouter>
     </>
   );
