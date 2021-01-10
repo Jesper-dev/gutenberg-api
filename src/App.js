@@ -26,13 +26,13 @@ const App = () => {
         <Link to="have-a-laugh"></Link>
 
         <Switch>
-          <Route path="/gutenberg-api//love" exact>
+          <Route path="/gutenberg-api/love" exact>
             <LoveApi />
           </Route>
-          <Route path="/gutenberg-api//generate-fun-fact" exact>
+          <Route path="/gutenberg-api/generate-fun-fact" exact>
             <RandomNumFact />
           </Route>
-          <Route path="/gutenberg-api//have-a-laugh" exact>
+          <Route path="/gutenberg-api/have-a-laugh" exact>
             <JokeApi />
           </Route>
         </Switch>
