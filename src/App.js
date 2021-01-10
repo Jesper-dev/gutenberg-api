@@ -19,7 +19,7 @@ import JokeApi from "./components/apis/JokeApi";
 const App = () => {
   return (
     <>
-      <Router basename="https://jesperkyh.github.io/gutenberg-api">
+      <Router basename="https://jesperkyh.github.io">
         <Landingpage />
         <Link to="love"></Link>
         <Link to="generate-fun-fact"></Link>
