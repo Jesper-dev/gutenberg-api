@@ -1,6 +1,5 @@
 import React from "react";
-import LoveApi from "./components/apis/LoveApi";
-import RandomNumFact from "./components/apis/RandomNumFact";
+
 import Landingpage from "./components/Landingpage";
 import ReactRouter from "react-router";
 import {
@@ -14,6 +13,8 @@ import {
 
 import "./style/styles.css";
 import JokeApi from "./components/apis/JokeApi";
+import LoveApi from "./components/apis/LoveApi";
+import RandomNumFact from "./components/apis/RandomNumFact";
 // import Route from "./components/Route";
 
 const App = () => {
