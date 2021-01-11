@@ -14,9 +14,9 @@ const App = () => {
   return (
     <Router>
       <>
-        {/* <Link to="/love"></Link>
+        <Link to="/love"></Link>
         <Link to="/generate-fun-fact"></Link>
-        <Link to="/have-a-laugh"></Link> */}
+        <Link to="/have-a-laugh"></Link>
 
         <Route exact path="/">
           <Landingpage />
