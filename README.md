@@ -2,8 +2,8 @@
 
 ## Made by
 
-- **Jesper Pettersson** (<https://github.com/JesperKYH>)
+- **Jesper Pettersson** [GITHUB](https://github.com/JesperKYH)
 
-- **Jon Sundelöf** (<https://github.com/jon-sundelof>)
+- **Jon Sundelöf** [GITHUB](https://github.com/jon-sundelof)
 
 ### [website](http://gutenberg-api.surge.sh/)
