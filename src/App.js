@@ -21,7 +21,7 @@ const App = () => {
         <Route exact path="/">
           <Landingpage />
         </Route>
-        <Route exact path="/love">
+        <Route path="/love">
           <LoveApi />
         </Route>
         <Route path="/generate-fun-fact">
