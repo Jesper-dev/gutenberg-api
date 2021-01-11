@@ -13,7 +13,7 @@ const Landingpage = () => {
       <div className="links-con">
         <div className="love-tab-con">
           <h1>The Matchmaker</h1>
-          <Link href="love">
+          <Link href="/gutenberg-api/love">
             <div className="love-btn-con">
               <i class="far fa-grin-hearts"></i>
             </div>
